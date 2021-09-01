@@ -45,24 +45,24 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'blog';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'postgres';
-$db['default']['password'] = '123456';
-$db['default']['database'] = 'blog';
-$db['default']['dbdriver'] = 'postgre';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['blog']['hostname'] = 'localhost';
+$db['blog']['username'] = 'postgres';
+$db['blog']['password'] = '123456';
+$db['blog']['database'] = 'blog';
+$db['blog']['dbdriver'] = 'postgre';
+$db['blog']['dbprefix'] = '';
+$db['blog']['pconnect'] = TRUE;
+$db['blog']['db_debug'] = TRUE;
+$db['blog']['cache_on'] = FALSE;
+$db['blog']['cachedir'] = '';
+$db['blog']['char_set'] = 'utf8';
+$db['blog']['dbcollat'] = 'utf8_general_ci';
+$db['blog']['swap_pre'] = '';
+$db['blog']['autoinit'] = TRUE;
+$db['blog']['stricton'] = FALSE;
 
 
 /* End of file database.php */
