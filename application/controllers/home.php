@@ -10,8 +10,8 @@ class Home extends CI_Controller {
 	public function index(){
 		$allPosts = $this->post->findPost();
 
-		$dados['posts'] = $allPosts;
+		// echo "<pre>"; print_r($allPosts[0]['body']); echo "</pre>";
 
-		$this->load->view('layout', $dados);
+		$this->load->view('layout', $allPosts);
 	}
 }

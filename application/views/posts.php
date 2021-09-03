@@ -2,9 +2,9 @@
 <hr>
 
 <?php
-    // if( count($dados) > 0 ){
-
-    // } else {
-    //     echo "<p>Nenhum post encontrado</p>";
-    // }
+    if( count($allPosts) > 0 ){
+        echo "<p>{$allPosts['body']}</p>";
+    } else {
+        echo "<p>Nenhum post encontrado</p>";
+    }
 ?>

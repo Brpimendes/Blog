@@ -11,15 +11,13 @@ class Post_model extends CI_Model {
 
     public function findPost(){        
         $qry = $this->db->get('posts');
-
-        echo "<pre>"; print_r($qry); echo "</pre>";
         
         if( $qry->num_rows() ){
             $row = $qry->row();
-            return $row->title;
 
-            // return $qry->result_array('title');
-            
+            $dados = $qry->result_array($row);
+
+            return $dados;            
         } else {
             return NULL;
         }
